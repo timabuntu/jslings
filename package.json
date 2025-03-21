@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "jslings",
+  "version": "1.0.0",
+  "description": "JSlings é um sistema de exercícios práticos para aprender JavaScript moderno através de pequenos desafios. Inspirado no modelo do Rustlings, este curso oferece uma série de exercícios progressivos, todos acompanhados por testes automatizados que o ajudarão a verificar seu progresso.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "test": "jest",
+    "test:all": "jest --all",
+    "hint": "node scripts/hint.js",
+    "watch": "jest --watch",
+    "reset": "node scripts/reset.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "glob": "^11.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
