@@ -12,11 +12,12 @@
 //
 // 📚 DICA: 'let' permite reatribuição, 'const' não.
 
-let nome = "Maria"; // Esta linha tem um problema
+const nome = "Maria"; // Esta linha tem um problema
 
-const PI = 3.14159; // Esta linha tem um problema
+let PI = 3.14159; // Esta linha tem um problema
 
-var linguagem = "JavaScript"; // Esta linha tem um problema
+var linguagem = "Java"; // Esta linha tem um problema
+
 
 // Não modifique o código abaixo!
 function verificarVariaveis() {
