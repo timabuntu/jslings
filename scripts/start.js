@@ -1,12 +1,13 @@
-// scripts/start.js
 import fs from 'fs-extra';
 import path from 'path';
-import chalk from 'chalk';
-import { globSync } from 'glob';
 import { fileURLToPath } from 'url';
+import chalk from 'chalk';
+import { glob } from 'glob';
 
-// Polyfill para __dirname
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// Obter o caminho do diretório atual em ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Arquivo para rastrear o progresso
 const PROGRESS_FILE = path.join(__dirname, '..', '.progress.json');
@@ -20,7 +21,7 @@ if (!fs.existsSync(PROGRESS_FILE)) {
 let progress = fs.readJSONSync(PROGRESS_FILE);
 
 // Obtém todos os exercícios na ordem correta
-const exercises = globSync('exercises/**/*.js')
+const exercises = glob.sync('exercises/**/*.js')
   .sort((a, b) => {
     // Ordenação personalizada para seguir a sequência correta
     const partsA = a.split('/');

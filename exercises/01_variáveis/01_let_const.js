@@ -1,5 +1,3 @@
-// Exemplo de arquivo de exercício: exercises/01_variáveis/01_let_const.js
-
 // 💡 EXERCÍCIO: Variáveis com let e const
 // 
 // Neste exercício, vamos aprender sobre declaração de variáveis em JavaScript moderno.
@@ -18,20 +16,13 @@ let PI = 3.14159; // Esta linha tem um problema
 
 var linguagem = "Java"; // Esta linha tem um problema
 
-
 // Não modifique o código abaixo!
 function verificarVariaveis() {
   // Tenta reatribuir 'nome'
   nome = "João";
-
+  
   // Verificamos se linguagem tem o valor correto
   return linguagem === "JavaScript";
-
 }
 
-module.exports = {
-  nome,
-  PI,
-  linguagem,
-  verificarVariaveis
-};
+export { nome, PI, linguagem, verificarVariaveis };
